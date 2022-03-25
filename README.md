@@ -1,15 +1,7 @@
-k-means clustering is a method of vector quantization, originally from signal processing, that aims to partition n observations into k clusters in which
-
+"k-means clustering is a method of vector quantization, originally from signal processing, that aims to partition n observations into k clusters in which
 each observation belongs to the cluster with the nearest mean (cluster centers or cluster centroid), serving as a prototype of the cluster. This results in 
-
 a partitioning of the data space into Voronoi cells. k-means clustering minimizes within-cluster variances (squared Euclidean distances), but not regular 
-
-Euclidean distances. [...] The problem is computationally difficult (NP-hard)."
-
-Given a set of observations (x1, x2, ..., xn), where each observation is a d-dimensional real vector, k-means clustering aims to partition the n 
-
-observations into k (≤ n) sets S = {S1, S2, ..., Sk} so as to minimize the within-cluster sum of squares (WCSS) (i.e. variance). Formally, the objective is 
-
+Euclidean distances. [...] The problem is computationally difficult (NP-hard). Given a set of observations (x1, x2, ..., xn), where each observation is a d-dimensional real vector, k-means clustering aims to partition the n observations into k (≤ n) sets S = {S1, S2, ..., Sk} so as to minimize the within-cluster sum of squares (WCSS) (i.e. variance). Formally, the objective is 
 to find:
 
 ```math
@@ -29,7 +21,6 @@ The equivalence can be deduced from identity
 ```
 
 Note that, due to that the total variance is constant, this is equivalent to maximizing the sum of squared deviations between points in different clusters 
-
 (between-cluster sum of squares, BCSS),[1]. This deterministic relationship is also related to the law of total variance in probability theory."
 
 https://en.wikipedia.org/wiki/K-means_clustering
