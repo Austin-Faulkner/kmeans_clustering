@@ -11,21 +11,17 @@ where $μ_{i}$ is the mean of points in $S_{i}$. This is equivalent to minimizin
 {\displaystyle {\underset {\mathbf {S} }{\operatorname {arg\,min} }}\sum _{i=1}^{k}\,{\frac {1}{|S_{i}|}}\,\sum _{\mathbf {x} ,\mathbf {y} \in S_{i}}\left\|\mathbf {x} -\mathbf {y} \right\|^{2}}
 ```
 
-<!-- such that
-
-```math
-{\displaystyle {\underset {\mathbf {S} }{\operatorname {arg\,min} }}\sum _{i=1}^{k}\,{\frac {1}{|S_{i}|}}\,\sum _{\mathbf {x} ,\mathbf {y} \in S_{i}}\left\|\mathbf {x} -\mathbf {y} \right\|^{2}}
-``` -->
-
 The equivalence can be deduced from identity 
 
 ```math
-{\displaystyle |S_{i}|\sum _{\mathbf {x} \in S_{i}}\left\|\mathbf {x} -{\boldsymbol {\mu }}_{i}\right\|^{2}=\sum _{\mathbf {x} \neq \mathbf {y} \in S_{i}}\left\|\mathbf {x} -\mathbf {y} \right\|^{2}}{\displaystyle |S_{i}|\sum _{\mathbf {x} \in S_{i}}\left\|\mathbf {x} -{\boldsymbol {\mu }}_{i}\right\|^{2}=\sum _{\mathbf {x} \neq \mathbf {y} \in S_{i}}\left\|\mathbf {x} -\mathbf {y} \right\|^{2}}. 
+{\displaystyle |S_{i}|\sum _{\mathbf {x} \in S_{i}}\left\|\mathbf {x} -{\boldsymbol {\mu }}_{i}\right\|^{2}=\sum _{\mathbf {x} \neq \mathbf {y} \in S_{i}}\left\|\mathbf {x} -\mathbf {y} \right\|^{2}}
 ```
 
 Note that, due to that the total variance is constant, this is equivalent to maximizing the sum of squared deviations between points in different clusters (between-cluster sum of squares, BCSS),[1]. This deterministic relationship is also related to the law of total variance in probability theory."
 
 https://en.wikipedia.org/wiki/K-means_clustering
+
+# kmeans_clustering.py
 
 The kmeans clustering .py python script is run:
 
@@ -47,6 +43,6 @@ Example output - output3.txt:
 
 [output3.txt](https://github.com/Austin-Faulkner/kmeans_clustering/files/8351290/output3.txt)
 
-Example clustre mapping - K_3_input3_output.jpeg:
+Example cluster mapping in gen.exe - K_3_input3_output.jpeg:
 
 ![k_3_input3_output](https://user-images.githubusercontent.com/7588505/160138506-38ec8b62-f723-48c6-99c4-6cc00d638cfd.jpeg)
